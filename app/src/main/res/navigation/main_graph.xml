@@ -13,6 +13,10 @@
         <action
             android:id="@+id/action_secondFragment_to_thirdFragment"
             app:destination="@id/thirdFragment" />
+        <argument
+            android:name="name"
+            app:argType="string"
+            android:defaultValue="Guest" />
     </fragment>
     <fragment
         android:id="@+id/thirdFragment"

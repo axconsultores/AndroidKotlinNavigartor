@@ -6,10 +6,20 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import androidx.navigation.NavArgs
 import androidx.navigation.fragment.findNavController
+import androidx.navigation.fragment.navArgs
+import android.widget.TextView
+
+
+
 
 
 class SecondFragment : Fragment() {
+
+
+val args: SecondFragmentArgs by navArgs()
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,5 +41,16 @@ class SecondFragment : Fragment() {
 
         return root
     }
+
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        val name : String = args.name
+
+         val tvName = view.findViewById<TextView>(R.id.txtName)
+
+        tvName.text  = name
+    }
+
 
 }
