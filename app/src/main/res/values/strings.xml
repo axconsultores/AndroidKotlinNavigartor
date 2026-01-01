@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Navigator</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="navegar">Navegar</string>
+    <string name="hello_blank_fragment">Navegar</string>
+
+
+</resources>
