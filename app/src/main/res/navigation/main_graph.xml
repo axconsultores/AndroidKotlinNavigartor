@@ -24,6 +24,13 @@
         android:label="fragment_third"
         tools:layout="@layout/fragment_third" >
 
+        <action
+            android:id="@+id/action_thirdFragment_to_firstFragment"
+            app:destination="@id/firstFragment" />
+        <argument
+            android:name="name"
+            app:argType="string"
+            android:defaultValue="hola" />
     </fragment>
     <fragment
         android:id="@+id/firstFragment"

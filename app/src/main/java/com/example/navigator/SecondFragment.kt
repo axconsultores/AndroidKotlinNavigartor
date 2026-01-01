@@ -36,7 +36,8 @@ val args: SecondFragmentArgs by navArgs()
         val btnNavigator :Button = root.findViewById<Button>(R.id.btn_navigator)
 
         btnNavigator.setOnClickListener {
-            findNavController().navigate(R.id.action_secondFragment_to_thirdFragment)
+            //findNavController().navigate(R.id.action_secondFragment_to_thirdFragment)
+            findNavController().navigate(SecondFragmentDirections.actionSecondFragmentToThirdFragment(name = "Daniel"))
         }
 
         return root
